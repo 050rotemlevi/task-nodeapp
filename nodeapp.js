@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: false }));
 // todo: change the "mongodb:27017" to the IP and port of the ReplicaSet.
 mongoose
   .connect(
-    'mongodb://mongodb:27017/docker-node-mongo',
+    'mongodb://username:password@mongodb-instance-1.c.wideops-candidate6.internal mongodb-instance-1:27017,mongodb-instance-1.c.wideops-candidate6.internal mongodb-instance-2:27017,mongodb-instance-1.c.wideops-candidate6.internal mongodb-instance-3:27017/?replicaSet=dev-rs0',
     { useNewUrlParser: true }
   )
   .then(() => console.log('MongoDB Connected'))
