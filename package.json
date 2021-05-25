@@ -1,0 +1,16 @@
+{
+  "name": "task",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Node.js Hello world app.",
+  "author": "Rotem Levi",
+  "main": "nodeapp.js",
+  "scripts": {
+    "start": "node nodeapp.js"
+  },
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.7"
+  }
+}
